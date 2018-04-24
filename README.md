@@ -8,7 +8,8 @@ This plugin uses pure javascript so no additional libraries are required.
 
 1. Include the plugin javascript and stylesheet (you can choose from using a normal CSS file or SASS).
 
-2. Add a div element with an id of "gdpr-popup" to your website's body. (<div id="gdpr-popup"></div>).
+2. Add a div element with an id of "gdpr-popup" to your website's body.
+
 
 ### Usage
 
@@ -18,25 +19,34 @@ To initiate the plugin you have to start the plugin by calling it
 initiateGDPR()
 ```
 
+
 ### Parameters/Options
 
 This plugin has a number of parameters that you can use:
 
-Google tag manager API KEY - Please provide google analytics or tag manager api key. eg. 
+```
+initiateGDPR(GTM, UA, Additional, Position, Title, Message, Button1, Button2);
+```
+
+
+
+GTM - Google tag manager API KEY
 
 ```
 initiateGDPR('GTM-XXXXXXX');
 ```
 
 
-Google analytics API KEY - Please provide google analytics or tag manager api key
+
+UA - Google analytics API KEY
 
 ```
 initiateGDPR(..., 'UA-XXXXXXX-X');
 ```
 
 
-Cookie names to delete - You can specify additional cookie names to disable. Has to be an array.
+
+Additional - You can specify additional cookie names to disable. (Has to be an array)
 
 ```
 initiateGDPR(..., ['cookie1']);
@@ -47,11 +57,13 @@ initiateGDPR(..., ['cookie1', 'cookie2', 'cookie3']);
 ```
 
 
-Postition: 'center', 'top', 'bottom' - sets the position of the popup window
+
+Postition - sets the position of the popup window ('center', 'top', 'bottom')
 
 ```
 initiateGDPR(..., 'center');
 ```
+
 
 
 Title - Sets popup title
