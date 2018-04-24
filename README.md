@@ -16,7 +16,7 @@ This plugin uses pure javascript so no additional libraries are required.
 To initiate the plugin you have to start the plugin by calling it
 
 ```
-initiateGDPR()
+initiateGdpr()
 ```
 
 
@@ -25,7 +25,7 @@ initiateGDPR()
 This plugin has a number of parameters that you can use:
 
 ```
-initiateGDPR(GTM, UA, Additional, Position, Title, Message, Button1, Button2);
+initiateGdpr(GTM, UA, Additional, Position, Title, Message, Button1, Button2);
 ```
 
 
@@ -33,7 +33,7 @@ initiateGDPR(GTM, UA, Additional, Position, Title, Message, Button1, Button2);
 GTM - Google tag manager API KEY
 
 ```
-initiateGDPR('GTM-XXXXXXX');
+initiateGdpr('GTM-XXXXXXX');
 ```
 
 
@@ -41,7 +41,7 @@ initiateGDPR('GTM-XXXXXXX');
 UA - Google analytics API KEY
 
 ```
-initiateGDPR(..., 'UA-XXXXXXX-X');
+initiateGdpr(..., 'UA-XXXXXXX-X');
 ```
 
 
@@ -49,11 +49,11 @@ initiateGDPR(..., 'UA-XXXXXXX-X');
 Additional - You can specify additional cookie names to disable. (Has to be an array)
 
 ```
-initiateGDPR(..., ['cookie1']);
+initiateGdpr(..., ['cookie1']);
 ```
 
 ```
-initiateGDPR(..., ['cookie1', 'cookie2', 'cookie3']);
+initiateGdpr(..., ['cookie1', 'cookie2', 'cookie3']);
 ```
 
 
@@ -61,7 +61,7 @@ initiateGDPR(..., ['cookie1', 'cookie2', 'cookie3']);
 Postition - sets the position of the popup window ('center', 'top', 'bottom')
 
 ```
-initiateGDPR(..., 'center');
+initiateGdpr(..., 'center');
 ```
 
 
@@ -78,5 +78,5 @@ Button2: Sets popup opt-out button text
 ## An example using all possible parameters
 
 ```
-initiateGDPR('GTM-XXXXXXX', 'UA-XXXXXXX-X', ['cookie1', 'cookie2'], 'bottom', 'Welcome!', 'Please use these buttons to opt in or out of tracking functionality', 'Opt-in', 'Opt-out');
+initiateGdpr('GTM-XXXXXXX', 'UA-XXXXXXX-X', ['cookie1', 'cookie2'], 'bottom', 'Welcome!', 'Please use these buttons to opt in or out of tracking functionality', 'Opt-in', 'Opt-out');
 ```
